@@ -125,7 +125,7 @@
     },
     "trailId": {
       "type": "Number",
-      "id": true,
+      "id": false,
       "required": false,
       "length": null,
       "precision": 10,

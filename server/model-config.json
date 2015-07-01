@@ -33,23 +33,27 @@
   },
   "DatawakeData": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "DatawakeDomainEntities": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "DatawakeDomains": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "DatawakeSelections": {
     "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeTeamUsers": {
-    "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "DatawakeTeams": {
     "dataSource": "memex_sotera",
@@ -57,15 +61,21 @@
   },
   "DatawakeTrails": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "DatawakeUrlRank": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "DomainExtractorWebIndex": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "GeneralExtractorWebIndex": {
     "dataSource": "memex_sotera",
@@ -73,11 +83,15 @@
   },
   "ManualExtractorMarkupAdditions": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "ManualExtractorMarkupRemovals": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "VwTeamUsers": {
     "dataSource": "memex_sotera",
@@ -85,10 +99,20 @@
   },
   "VwUrlsInTrails": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "VwDomainEntities": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "DatawakeTeamUsers": {
+    "dataSource": "memex_sotera",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

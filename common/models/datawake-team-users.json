@@ -10,23 +10,6 @@
     "table": "datawake_team_users"
   },
   "properties": {
-    "teamUserId": {
-      "type": "Number",
-      "id": true,
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "team_user_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "email": {
       "type": "String",
       "required": false,
@@ -45,7 +28,7 @@
     },
     "teamId": {
       "type": "Number",
-      "id": true,
+      "id": false,
       "required": false,
       "length": null,
       "precision": 10,
@@ -59,6 +42,23 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "teamUserId": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "team_user_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
     }
   },
   "validations": [],

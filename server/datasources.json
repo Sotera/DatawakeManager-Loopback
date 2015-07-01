@@ -1,0 +1,22 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "testMongoDB": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "products",
+    "name": "testMongoDB",
+    "connector": "mongodb"
+  },
+  "memex_sotera": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "memex_sotera",
+    "password": "root",
+    "name": "memex_sotera",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

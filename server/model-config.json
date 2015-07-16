@@ -119,6 +119,8 @@
   },
   "VwUrlsInTrails": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

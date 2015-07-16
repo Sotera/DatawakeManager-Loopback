@@ -74,54 +74,6 @@
       },
       "_selectable": true
     },
-    "useremail": {
-      "type": "String",
-      "required": false,
-      "length": 245,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "userEmail",
-        "dataType": "varchar",
-        "dataLength": 245,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "domainname": {
-      "type": "String",
-      "required": false,
-      "length": 300,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "domainName",
-        "dataType": "varchar",
-        "dataLength": 300,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "domaindescription": {
-      "type": "String",
-      "required": false,
-      "length": 65535,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "domainDescription",
-        "dataType": "text",
-        "dataLength": 65535,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "url": {
       "type": "String",
       "required": false,
@@ -167,6 +119,54 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "domainDescription": {
+      "type": "String",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "domainDescription",
+        "dataType": "text",
+        "dataLength": 65535,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "domainName": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "domainName",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "userEmail": {
+      "type": "String",
+      "required": false,
+      "length": 245,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "userEmail",
+        "dataType": "varchar",
+        "dataLength": 245,
+        "dataPrecision": null,
+        "dataScale": null,
         "nullable": "Y"
       },
       "_selectable": true

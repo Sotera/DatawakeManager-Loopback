@@ -12,7 +12,7 @@
   "properties": {
     "ts": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 19,
       "scale": 0,
@@ -22,9 +22,57 @@
         "dataLength": null,
         "dataPrecision": 19,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
+    },
+    "domainId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "domain_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "trailId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "trail_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "teamId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "team_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
     },
     "useremail": {
       "type": "String",
@@ -36,6 +84,38 @@
         "columnName": "userEmail",
         "dataType": "varchar",
         "dataLength": 245,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "domainname": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "domainName",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "domaindescription": {
+      "type": "String",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "domainDescription",
+        "dataType": "text",
+        "dataLength": 65535,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -77,46 +157,12 @@
     "id": {
       "type": "Number",
       "id": true,
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
         "columnName": "id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "teamId": {
-      "type": "Number",
-      "id": false,
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "team_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "trailId": {
-      "type": "Number",
-      "id": false,
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "trail_id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,

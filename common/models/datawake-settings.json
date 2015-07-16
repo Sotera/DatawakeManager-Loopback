@@ -1,0 +1,51 @@
+{
+  "name": "DatawakeSettings",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "memex_sotera",
+    "table": "datawake_settings"
+  },
+  "properties": {
+    "setting": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "setting",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "value": {
+      "type": "String",
+      "required": false,
+      "length": 500,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "value",
+        "dataType": "varchar",
+        "dataLength": 500,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

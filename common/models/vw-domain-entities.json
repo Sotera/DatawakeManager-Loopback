@@ -10,6 +10,22 @@
     "table": "vw_domain_entities"
   },
   "properties": {
+    "id": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "name": {
       "type": "String",
       "required": false,
@@ -22,6 +38,38 @@
         "dataLength": 300,
         "dataPrecision": null,
         "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "description": {
+      "type": "String",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "description",
+        "dataType": "text",
+        "dataLength": 65535,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "teamId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "team_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "Y"
       },
       "_selectable": true
@@ -58,24 +106,7 @@
       },
       "_selectable": true
     },
-    "description": {
-      "type": "String",
-      "id": false,
-      "required": false,
-      "length": 65535,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "description",
-        "dataType": "text",
-        "dataLength": 65535,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "domainEntityId": {
+    "domainentityid": {
       "type": "Number",
       "id": true,
       "required": true,
@@ -91,40 +122,6 @@
         "nullable": "N"
       },
       "_selectable": false
-    },
-    "id": {
-      "type": "Number",
-      "id": false,
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "teamId": {
-      "type": "Number",
-      "id": false,
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "team_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
     }
   },
   "validations": [],

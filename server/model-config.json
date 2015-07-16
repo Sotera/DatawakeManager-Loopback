@@ -93,11 +93,13 @@
     "$promise": {},
     "$resolved": true
   },
-  "VwTeamUsers": {
+  "DatawakeTeamUsers": {
     "dataSource": "memex_sotera",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-  "VwUrlsInTrails": {
+  "DatawakeSettings": {
     "dataSource": "memex_sotera",
     "public": true,
     "$promise": {},
@@ -109,10 +111,14 @@
     "$promise": {},
     "$resolved": true
   },
-  "DatawakeTeamUsers": {
+  "VwTeamUsers": {
     "dataSource": "memex_sotera",
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "VwUrlsInTrails": {
+    "dataSource": "memex_sotera",
+    "public": true
   }
 }

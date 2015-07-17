@@ -104,23 +104,5 @@
     "public": true,
     "$promise": {},
     "$resolved": true
-  },
-  "VwDomainEntities": {
-    "dataSource": "memex_sotera",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "VwTeamUsers": {
-    "dataSource": "memex_sotera",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "VwUrlsInTrails": {
-    "dataSource": "memex_sotera",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
   }
 }

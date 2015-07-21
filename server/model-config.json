@@ -91,6 +91,12 @@
     "dataSource": "memex_sotera",
     "public": true
   },
+  "DatawakeSettings": {
+    "dataSource": "memex_sotera",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
   "DatawakeXmit": {
     "dataSource": "memex_sotera",
     "public": true,

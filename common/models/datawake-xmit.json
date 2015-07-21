@@ -75,7 +75,7 @@
       },
       "_selectable": true
     },
-	"xmitStatus": {
+    "xmitStatus": {
       "type": "String",
       "required": false,
       "length": 255,

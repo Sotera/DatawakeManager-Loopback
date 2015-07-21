@@ -26,23 +26,6 @@
       },
       "_selectable": true
     },
-	"properties": {
-    "xmitStatus": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "xmit_status",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "domainId": {
       "type": "Number",
       "required": false,
@@ -75,22 +58,6 @@
       },
       "_selectable": true
     },
-    "recipientId": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "recipientId",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "recipientName": {
       "type": "String",
       "required": false,
@@ -117,6 +84,38 @@
         "columnName": "serviceType",
         "dataType": "varchar",
         "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "recipientId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "recipientId",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "status": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "varchar",
+        "dataLength": 255,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -189,6 +188,7 @@
     },
     "xmitId": {
       "type": "Number",
+      "id": true,
       "required": true,
       "length": null,
       "precision": 10,

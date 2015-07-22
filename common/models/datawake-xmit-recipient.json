@@ -107,6 +107,22 @@
       },
       "_selectable": true
     },
+    "recipientUrl": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "recipient_url",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "credentials": {
       "type": "String",
       "required": false,
@@ -115,6 +131,22 @@
       "scale": null,
       "mysql": {
         "columnName": "credentials",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "serviceType": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "service_type",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,

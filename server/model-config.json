@@ -103,17 +103,15 @@
     "$promise": {},
     "$resolved": true
   },
-  "DatawakeXmitRecipient": {
-    "dataSource": "memex_sotera",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
   "VwDatawakeDomains": {
     "dataSource": "memex_sotera",
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "DatawakeXmitRecipient": {
+    "dataSource": "memex_sotera",
+    "public": true
   },
   "VwXmitLog": {
     "dataSource": "memex_sotera",
@@ -123,8 +121,6 @@
   },
   "VwXmitRecipients": {
     "dataSource": "memex_sotera",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
+    "public": true
   }
 }

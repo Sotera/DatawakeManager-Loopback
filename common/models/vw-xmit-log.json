@@ -10,22 +10,6 @@
     "table": "vw_xmit_log"
   },
   "properties": {
-    "status": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "status",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "datawakeUrl": {
       "type": "String",
       "required": false,
@@ -138,6 +122,22 @@
       },
       "_selectable": true
     },
+    "status": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "teamId": {
       "type": "Number",
       "required": false,
@@ -164,6 +164,22 @@
         "columnName": "teamName",
         "dataType": "varchar",
         "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "timestamp": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "timeStamp",
+        "dataType": "timestamp",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -218,22 +234,6 @@
         "nullable": "N"
       },
       "_selectable": false
-    },
-	"ts": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 19,
-      "scale": 0,
-      "mysql": {
-        "columnName": "ts",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": 19,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
     }
   },
   "validations": [],

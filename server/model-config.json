@@ -113,13 +113,11 @@
     "dataSource": "memex_sotera",
     "public": true
   },
-  "VwXmitLog": {
-    "dataSource": "memex_sotera",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
   "VwXmitRecipients": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "VwXmitLog": {
     "dataSource": "memex_sotera",
     "public": true
   }

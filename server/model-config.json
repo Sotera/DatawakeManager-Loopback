@@ -31,10 +31,6 @@
     "dataSource": "testMongoDB",
     "public": true
   },
-  "DatawakeData": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
   "DatawakeDomainEntities": {
     "dataSource": "memex_sotera",
     "public": true
@@ -118,6 +114,18 @@
     "public": true
   },
   "VwXmitLog": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "DatawakeData": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "VwBrowseCount": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "TrailTermRank": {
     "dataSource": "memex_sotera",
     "public": true
   }

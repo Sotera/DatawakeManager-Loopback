@@ -1,5 +1,5 @@
 {
-  "name": "DatawakeData",
+  "name": "TrailTermRank",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,148 +7,135 @@
   },
   "mysql": {
     "schema": "memex_sotera",
-    "table": "datawake_data"
+    "table": "trail_term_rank"
   },
   "properties": {
-    "id": {
+    "title": {
+      "type": "String",
+      "required": false,
+      "length": 1024,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "title",
+        "dataType": "varchar",
+        "dataLength": 1024,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "rank": {
       "type": "Number",
-      "id": true,
-      "required": true,
+      "required": false,
+      "length": null,
+      "precision": 22,
+      "scale": null,
+      "mysql": {
+        "columnName": "rank",
+        "dataType": "double",
+        "dataLength": null,
+        "dataPrecision": 22,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "pagerank": {
+      "type": "Number",
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "id",
+        "columnName": "pageRank",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "ts": {
-      "type": "Date",
-      "required": true,
+    "removed": {
+      "type": "Number",
+      "required": false,
       "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "removed",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "domain": {
+      "type": "String",
+      "id": true,
+      "required": false,
+      "length": 300,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "ts",
-        "dataType": "timestamp",
-        "dataLength": null,
+        "columnName": "domain",
+        "dataType": "varchar",
+        "dataLength": 300,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
+    },
+    "org": {
+      "type": "String",
+      "id": true,
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "org",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "trail": {
+      "type": "String",
+      "id": true,
+      "required": false,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "trail",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
     },
     "url": {
       "type": "String",
+      "id": true,
       "required": false,
-      "length": 65535,
+      "length": 1024,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "url",
-        "dataType": "text",
-        "dataLength": 65535,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "useremail": {
-      "type": "String",
-      "required": false,
-      "length": 245,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "userEmail",
         "dataType": "varchar",
-        "dataLength": 245,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "teamId": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "team_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "domainId": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "domain_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "trailId": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "trail_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "crawlType": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "crawl_type",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "comments": {
-      "type": "String",
-      "required": false,
-      "length": 1000,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "comments",
-        "dataType": "varchar",
-        "dataLength": 1000,
+        "dataLength": 1024,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"

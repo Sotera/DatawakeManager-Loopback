@@ -107,6 +107,22 @@
       },
       "_selectable": true
     },
+    "recipientProtocol": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "recipient_protocol",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "recipientUrl": {
       "type": "String",
       "required": false,

@@ -105,18 +105,6 @@
     "$promise": {},
     "$resolved": true
   },
-  "DatawakeXmitRecipient": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "VwXmitRecipients": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "VwXmitLog": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
   "DatawakeData": {
     "dataSource": "memex_sotera",
     "public": true
@@ -126,6 +114,18 @@
     "public": true
   },
   "TrailTermRank": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "DatawakeXmitRecipient": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "VwXmitLog": {
+    "dataSource": "memex_sotera",
+    "public": true
+  },
+  "VwXmitRecipients": {
     "dataSource": "memex_sotera",
     "public": true
   }

@@ -10,14 +10,14 @@
     "table": "vw_xmit_log"
   },
   "properties": {
-    "recipientName": {
+    "status": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "recipientName",
+        "columnName": "status",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -26,48 +26,16 @@
       },
       "_selectable": true
     },
-    "protocol": {
-      "type": "String",
+    "timestamp": {
+      "type": "Date",
       "required": false,
-      "length": 10,
+      "length": null,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "protocol",
-        "dataType": "varchar",
-        "dataLength": 10,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "recipientUrl": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "recipientURL",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "serviceType": {
-      "type": "String",
-      "required": false,
-      "length": 10,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "serviceType",
-        "dataType": "varchar",
-        "dataLength": 10,
+        "columnName": "timeStamp",
+        "dataType": "timestamp",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -82,22 +50,6 @@
       "scale": null,
       "mysql": {
         "columnName": "datawakeUrl",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "status": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "status",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -132,6 +84,86 @@
         "columnName": "domainName",
         "dataType": "varchar",
         "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "recipientId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "recipientId",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "recipientName": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "recipientName",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "recipientProtocol": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "recipientProtocol",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "recipientUrl": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "recipientURL",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "serviceType": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "serviceType",
+        "dataType": "varchar",
+        "dataLength": 10,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -198,39 +230,6 @@
         "dataLength": 100,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "timestamp": {
-      "type": "Date",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "timeStamp",
-        "dataType": "timestamp",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "recipientId": {
-      "type": "Number",
-      "id": false,
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "recipientId",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
         "nullable": "Y"
       },
       "_selectable": true

@@ -10,22 +10,6 @@
     "table": "vw_xmit_recipients"
   },
   "properties": {
-    "protocol": {
-      "type": "String",
-      "required": false,
-      "length": 10,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "protocol",
-        "dataType": "varchar",
-        "dataLength": 10,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "recipientCredentials": {
       "type": "String",
       "required": false,
@@ -74,23 +58,6 @@
       },
       "_selectable": true
     },
-    "recipientId": {
-      "type": "Number",
-      "id": true,
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "recipientId",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "recipientIndex": {
       "type": "String",
       "required": false,
@@ -117,6 +84,22 @@
         "columnName": "recipientName",
         "dataType": "varchar",
         "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "recipientProtocol": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "recipientProtocol",
+        "dataType": "varchar",
+        "dataLength": 10,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -218,6 +201,23 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "recipientId": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "recipientId",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
     }
   },
   "validations": [],

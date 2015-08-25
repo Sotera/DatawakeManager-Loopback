@@ -10,7 +10,7 @@
     "table": "vw_xmit_log"
   },
   "properties": {
-    "recipientname": {
+    "recipientName": {
       "type": "String",
       "required": false,
       "length": 255,
@@ -42,7 +42,7 @@
       },
       "_selectable": true
     },
-    "recipienturl": {
+    "recipientUrl": {
       "type": "String",
       "required": false,
       "length": 255,
@@ -58,7 +58,7 @@
       },
       "_selectable": true
     },
-    "servicetype": {
+    "serviceType": {
       "type": "String",
       "required": false,
       "length": 10,
@@ -74,7 +74,7 @@
       },
       "_selectable": true
     },
-    "datawakeurl": {
+    "datawakeUrl": {
       "type": "String",
       "required": false,
       "length": 255,
@@ -106,7 +106,7 @@
       },
       "_selectable": true
     },
-    "domainid": {
+    "domainId": {
       "type": "Number",
       "required": false,
       "length": null,
@@ -122,7 +122,7 @@
       },
       "_selectable": true
     },
-    "domainname": {
+    "domainName": {
       "type": "String",
       "required": false,
       "length": 300,
@@ -138,7 +138,7 @@
       },
       "_selectable": true
     },
-    "teamid": {
+    "teamId": {
       "type": "Number",
       "required": false,
       "length": null,
@@ -154,7 +154,7 @@
       },
       "_selectable": true
     },
-    "teamname": {
+    "teamName": {
       "type": "String",
       "required": false,
       "length": 100,
@@ -170,7 +170,7 @@
       },
       "_selectable": true
     },
-    "trailid": {
+    "trailId": {
       "type": "Number",
       "required": false,
       "length": null,
@@ -186,7 +186,7 @@
       },
       "_selectable": true
     },
-    "trailname": {
+    "trailName": {
       "type": "String",
       "required": false,
       "length": 100,
@@ -218,7 +218,7 @@
       },
       "_selectable": true
     },
-    "recipientid": {
+    "recipientId": {
       "type": "Number",
       "id": false,
       "required": false,
@@ -235,7 +235,7 @@
       },
       "_selectable": true
     },
-    "xmitid": {
+    "xmitId": {
       "type": "Number",
       "id": true,
       "required": true,

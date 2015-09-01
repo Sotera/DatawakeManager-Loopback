@@ -106,7 +106,7 @@
       },
       "_selectable": true
     },
-    "domainentityid": {
+    "domainEntityId": {
       "type": "Number",
       "id": true,
       "required": true,

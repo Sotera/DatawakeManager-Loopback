@@ -1,0 +1,26 @@
+{
+  "name": "dwCrawlType",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "crawlTypeId": {
+      "type": "number",
+      "id": true
+    },
+    "crawlTypedescription": {
+      "type": "string"
+    },
+    "crawlTypeName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "dwUrlExtractions",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "extractedValue": {
+      "type": "string"
+    },
+    "extractionId": {
+      "type": "number",
+      "id": true
+    },
+    "extractedType": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

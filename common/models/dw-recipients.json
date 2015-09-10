@@ -1,0 +1,66 @@
+{
+  "name": "dwRecipients",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "recipientCredentials": {
+      "type": "string"
+    },
+    "recipientId": {
+      "type": "string",
+      "id": true
+    },
+    "recipientIndex": {
+      "type": "string"
+    },
+    "recipientName": {
+      "type": "string",
+      "required": true
+    },
+    "recipientProtocol": {
+      "type": "string"
+    },
+    "recipientURL": {
+      "type": "string"
+    },
+    "serviceTypeId": {
+      "type": "number",
+      "required": true
+    },
+    "domainId": {
+      "type": "number"
+    },
+    "trailId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "recipientService": {
+      "type": "hasOne",
+      "model": "dwServiceTypes",
+      "foreignKey": "serviceTypeId"
+    },
+    "recipientDomains": {
+      "type": "hasMany",
+      "model": "dwDomains",
+      "foreignKey": "domainId"
+    },
+    "recipientTrails": {
+      "type": "hasMany",
+      "model": "dwTrails",
+      "foreignKey": "trailId"
+    },
+    "recipientTransmissions": {
+      "type": "hasMany",
+      "model": "dwTransmissions",
+      "foreignKey": "transmissionId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

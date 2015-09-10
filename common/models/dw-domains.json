@@ -1,0 +1,42 @@
+{
+  "name": "dwDomains",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "domainId": {
+      "type": "number",
+      "id": true
+    },
+    "domainName": {
+      "type": "string",
+      "required": true
+    },
+    "domainDescription": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "teamDomains": {
+      "type": "hasAndBelongsToMany",
+      "model": "dwTeams",
+      "foreignKey": "teamId"
+    },
+    "domainTeams": {
+      "type": "hasAndBelongsToMany",
+      "model": "dwTeams",
+      "foreignKey": "teamId"
+    },
+    "domainTrails": {
+      "type": "hasMany",
+      "model": "dwTrails",
+      "foreignKey": "trailId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

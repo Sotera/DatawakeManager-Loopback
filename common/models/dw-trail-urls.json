@@ -1,0 +1,48 @@
+{
+  "name": "dwTrailUrls",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "urlComments": {
+      "type": "string"
+    },
+    "urlId": {
+      "type": "number",
+      "id": true
+    },
+    "urlTimestamp": {
+      "type": "date"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "crawlTypeId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "urlTrail": {
+      "type": "belongsTo",
+      "model": "dwTrails",
+      "foreignKey": "trailId"
+    },
+    "urlCrawl": {
+      "type": "hasOne",
+      "model": "dwCrawlType",
+      "foreignKey": "crawlTypeId"
+    },
+    "urlExtractions": {
+      "type": "hasMany",
+      "model": "dwUrlExtractions",
+      "foreignKey": "urlExtractionId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

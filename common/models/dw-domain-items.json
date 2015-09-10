@@ -1,0 +1,33 @@
+{
+  "name": "dwDomainItems",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "itemValue": {
+      "type": "string",
+      "required": true
+    },
+    "itemId": {
+      "type": "number",
+      "id": true
+    },
+    "itemType": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "itemDomain": {
+      "type": "belongsTo",
+      "model": "dwDomains",
+      "foreignKey": "domainId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -3,6 +3,13 @@
     "name": "db",
     "connector": "memory"
   },
+  "memexDatawake": {
+    "host": MONGO_HOST_ADDR,
+    "port": MONGO_HOST_PORT,
+    "database": "memexDatawake",
+    "name": "memexDatawake",
+    "connector": "mongodb"
+  },
   "testMongoDB": {
     "host": MONGO_HOST_ADDR,
     "port": MONGO_HOST_PORT,

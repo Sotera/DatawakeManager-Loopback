@@ -7,22 +7,6 @@
       "./models"
     ]
   },
-  "AccessToken": {
-    "dataSource": "testMongoDB",
-    "public": false
-  },
-  "ACL": {
-    "dataSource": "testMongoDB",
-    "public": false
-  },
-  "RoleMapping": {
-    "dataSource": "testMongoDB",
-    "public": false
-  },
-  "Role": {
-    "dataSource": "testMongoDB",
-    "public": false
-  },
   "product": {
     "dataSource": "testMongoDB",
     "public": true
@@ -31,102 +15,74 @@
     "dataSource": "testMongoDB",
     "public": true
   },
-  "DatawakeDomainEntities": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeDomains": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeSelections": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeTeamUsers": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeTeams": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeTrails": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeUrlRank": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DomainExtractorWebIndex": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "GeneralExtractorWebIndex": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "ManualExtractorMarkupAdditions": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "ManualExtractorMarkupRemovals": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "VwTeamUsers": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "VwUrlsInTrails": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "VwDomainEntities": {
-    "dataSource": "memex_sotera",
-    "public": true
-  },
-  "DatawakeSettings": {
-    "dataSource": "memex_sotera",
+  "dwSettings": {
+    "dataSource": "memexDatawake",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
-  "DatawakeXmit": {
-    "dataSource": "memex_sotera",
+  "dwTeams": {
+    "dataSource": "memexDatawake",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
-  "VwDatawakeDomains": {
-    "dataSource": "memex_sotera",
+  "dwDomains": {
+    "dataSource": "memexDatawake",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
-  "DatawakeXmitRecipient": {
-    "dataSource": "memex_sotera",
-    "public": true
+  "dwDomainItems": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-  "VwXmitRecipients": {
-    "dataSource": "memex_sotera",
-    "public": true
+  "dwTrails": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-  "VwXmitLog": {
-    "dataSource": "memex_sotera",
-    "public": true
+  "dwCrawlType": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-  "DatawakeData": {
-    "dataSource": "memex_sotera",
-    "public": true
+  "dwUrlExtractions": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-  "VwBrowseCount": {
-    "dataSource": "memex_sotera",
-    "public": true
+  "dwTrailUrls": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-  "TrailTermRank": {
-    "dataSource": "memex_sotera",
+  "dwServiceTypes": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "dwRecipients": {
+    "dataSource": "memexDatawake",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "dwTransmissions": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "newModel": {
+    "dataSource": "testMongoDB",
     "public": true
   }
 }

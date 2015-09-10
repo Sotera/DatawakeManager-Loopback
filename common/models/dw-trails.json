@@ -1,0 +1,40 @@
+{
+  "name": "dwTrails",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "trailCreatedDate": {
+      "type": "date"
+    },
+    "trailDescription": {
+      "type": "string"
+    },
+    "trailId": {
+      "type": "number",
+      "id": true
+    },
+    "trailName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trailDomain": {
+      "type": "belongsTo",
+      "model": "dwDomains",
+      "foreignKey": "domainId"
+    },
+    "urlCrawl": {
+      "type": "hasOne",
+      "model": "dwCrawlType",
+      "foreignKey": "crawlTypeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

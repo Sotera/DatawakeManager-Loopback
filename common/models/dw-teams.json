@@ -1,0 +1,37 @@
+{
+  "name": "dwTeams",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "teamId": {
+      "type": "number",
+      "id": true
+    },
+    "teamDescription": {
+      "type": "string"
+    },
+    "teamName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "teamUsers": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": "userId"
+    },
+    "teamDomains": {
+      "type": "hasAndBelongsToMany",
+      "model": "dwDomains",
+      "foreignKey": "domainId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

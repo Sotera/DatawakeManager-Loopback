@@ -1,0 +1,38 @@
+{
+  "name": "dwTransmissions",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "transmissionId": {
+      "type": "string",
+      "id": true
+    },
+    "transmissionStatus": {
+      "type": "string"
+    },
+    "transmissiontimestamp": {
+      "type": "date"
+    },
+    "transmission": {
+      "type": "string"
+    },
+    "recipientId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "transRecipient": {
+      "type": "hasOne",
+      "model": "dwRecipients",
+      "foreignKey": "recipientId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
